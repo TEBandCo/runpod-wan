@@ -36,17 +36,17 @@ pip install --no-cache-dir torchvision==0.22.0+cu128 torchaudio==2.7.0 --index-u
 pip install -r requirements.txt
 
 # Installing ComfyUI Manager
-git clone https://github.com/ltdrdata/ComfyUI-Manager.git custom_nodes/ComfyUI-Manager
-cd custom_nodes/ComfyUI-Manager
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git /workspace/comfywan/custom_nodes/ComfyUI-Manager
+cd /workspace/comfywan/custom_nodes/ComfyUI-Manager
 pip install -r requirements.txt
 
 # Installing KJNodes
-git clone https://github.com/kijai/ComfyUI-KJNodes.git custom_nodes/ComfyUI-KJNodes
-cd custom_nodes/ComfyUI-KJNodes
+git clone https://github.com/kijai/ComfyUI-KJNodes.git /workspace/comfywan/custom_nodes/ComfyUI-KJNodes
+cd /workspace/comfywan/custom_nodes/ComfyUI-KJNodes
 pip install -r requirements.txt
 
-git clone https://github.com/welltop-cn/ComfyUI-TeaCache.git custom_nodes/ComfyUI-TeaCache
-cd custom_nodes/ComfyUI-TeaCache
+git clone https://github.com/welltop-cn/ComfyUI-TeaCache.git /workspace/comfywan/custom_nodes/ComfyUI-TeaCache
+cd /workspace/comfywan/custom_nodes/ComfyUI-TeaCache
 pip install -r requirements.txt
 ```
 2. Install the Serverless dependencies:
@@ -58,8 +58,8 @@ pip install triton
 # Install SageAttention after ensuring the correct torch version
 # wget -O https://github.com/atumn/runpod-wan/raw/refs/heads/main/sageattention-2.1.1-cp310-cp310-linux_x86_64.whl
 # RUN pip install /tmp/sageattention-2.1.1-cp310-cp310-linux_x86_64.whl
-git clone https://github.com/thu-ml/SageAttention.git
-cd SageAttention 
+git clone https://github.com/thu-ml/SageAttention.git /workspace/comfywan/SageAttention
+cd /workspace/comfywan/SageAttention 
 python setup.py install  # or pip install -e .
 
 ```
