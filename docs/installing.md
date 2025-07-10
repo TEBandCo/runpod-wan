@@ -76,7 +76,7 @@ python setup.py install  # or pip install -e .
 3. Download models:
 ```bash
 # Download GGUF model
-aria2c -x16 -s16 -d /workspace/comfywan/models/diffusion_models -o Wan2.1-VACE-14B-Q6_K.gguf --continue=true https://huggingface.co/QuantStack/Wan2.1-VACE-14B-GGUF/resolve/main/Wan2.1-VACE-14B-Q6_K.gguf
+aria2c -x16 -s16 -d /workspace/comfywan/models/diffusion_models -o Wan2.1-VACE-14B-Q6_K.gguf --continue=true https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/blob/main/Wan2.1_14B_VACE-Q6_K.gguf
 
 # Download text encoders also GGUF
 aria2c -x16 -s16 -d /workspace/comfywan/models/text_encoders -o umt5-xxl-encoder-Q8_0.gguf --continue=true https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q8_0.gguf
