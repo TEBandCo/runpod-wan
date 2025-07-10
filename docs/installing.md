@@ -55,6 +55,16 @@ pip install requests runpod==1.7.9 websocket-client
 pip install onnxruntime-gpu
 pip install triton
 
+# For some reason, SageAttention refused to install (incorrect CUDA version). The below seemed to work. 
+# Add the CUDA repo
+apt update && apt install -y wget gnupg lsb-release
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+dpkg -i cuda-keyring_1.1-1_all.deb
+apt update
+
+# Install CUDA 12.8 toolkit
+apt install -y cuda-toolkit-12-8
+
 # Install SageAttention after ensuring the correct torch version
 # wget -O https://github.com/atumn/runpod-wan/raw/refs/heads/main/sageattention-2.1.1-cp310-cp310-linux_x86_64.whl
 # RUN pip install /tmp/sageattention-2.1.1-cp310-cp310-linux_x86_64.whl
